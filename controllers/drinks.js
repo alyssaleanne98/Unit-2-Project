@@ -29,6 +29,11 @@ coffeeRouter.get("/new", (req, res) => {
 })
 
 //DELETE
+coffeeRouter.delete("/:id", (req, res) => {
+    Coffee.findByIdAndRemove(req.params.id, (err, deletedCoffee) => {
+      res.redirect("/coffee") 
+    })
+  })
 
 
 //SHOW ROUTE 

@@ -8,6 +8,9 @@
     <link rel="stylesheet" />
     <title>Coffee Menu </title>
 </head>
+<nav>
+    <a href="/coffee/new">Add New Coffee</a>
+</nav>
 
 <body>
     <h1>Coffee Menu</h1>
@@ -15,6 +18,7 @@
         <% coffees.forEach(coffees=> { %>
             <li>
                 <a href="/coffee/<%= coffees._id %>"> <%= coffees.name%><%= coffees.price%></a>
+               
             </li>
             <% }) %>
 
