@@ -23,6 +23,17 @@ coffeeRouter.get("/", (req, res) => {
     })
 })
 
+//SHOW ROUTE 
+coffeeRouter.get("/:id", (req, res) => {
+    Coffee.findById(req.params.id, (err, foundCoffee) => {
+        res.render("show.ejs", {coffees: foundCoffee})
+    })
+})
+
+//EDIT
+//DELETE
+//UPDATE 
+
 
 
 module.exports = coffeeRouter 

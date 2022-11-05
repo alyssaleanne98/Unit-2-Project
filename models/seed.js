@@ -12,8 +12,12 @@ const coffeeData = [
         price: "$4.50",
     },
     {
-        title: "Java chip frappacino",
-        author: "$3.50",
+        name: "Java chip frappacino",
+        price: "$3.50",
+    },
+    {
+        name: "Hot chocolate",
+        price: "$3.00",
     },
 ];
 

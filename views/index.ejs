@@ -14,7 +14,7 @@
     <ul>
         <% coffees.forEach(coffees=> { %>
             <li>
-                <a href="/coffee/<%= coffees._id %>"> <%= coffees.name%></a>
+                <a href="/coffee/<%= coffees._id %>"> <%= coffees.name%><%= coffees.price%></a>
             </li>
             <% }) %>
 
