@@ -23,6 +23,14 @@ coffeeRouter.get("/", (req, res) => {
     })
 })
 
+//NEW
+coffeeRouter.get("/new", (req, res) => {
+    res.render("new.ejs")
+})
+
+//DELETE
+
+
 //SHOW ROUTE 
 coffeeRouter.get("/:id", (req, res) => {
     Coffee.findById(req.params.id, (err, foundCoffee) => {
@@ -30,8 +38,11 @@ coffeeRouter.get("/:id", (req, res) => {
     })
 })
 
+
+
+
 //EDIT
-//DELETE
+
 //UPDATE 
 
 
