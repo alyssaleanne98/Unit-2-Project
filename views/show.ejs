@@ -10,13 +10,21 @@
 
 <body>
     <main class="show-main">
+        <nav>
+            <form action="/coffee/<%= coffees._id %>?_method=DELETE" method="post">
+                <input type="submit" value="DELETE" />
+                <a href="/coffee/<%= coffees._id %>/edit">EDIT</a>
+            </form>
+        </nav>
         <h1>
             <%= coffees.name %> %>
         </h1>
     </main>
-    <form action="/coffee/<%= coffees._id %>?_method=DELETE" method="post">
-        <input type="submit" value="DELETE" />
-    </form>
+    <h3>Price: <%= coffees.price %><br />
+            Milk: <%= coffees.milk %><br />
+                Flavors: <%= coffees.flavors %><br />
+    </h3>
+
 </body>
 
 </html>

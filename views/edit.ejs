@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Coffee </title>
+  </head>
+
+  <body>
+    <h1>Edit Coffee</h1>
+    <form action="/coffee/" method="POST">
+      Name: <input type="text" name="Name" value="<%=coffees.name%>" /><br />
+      Price: <input type="text" name="Name" value="<%=coffees.price%>" /><br />
+      Milk: <input type="text" name="Name" value="<%=coffees.milk%>" /><br />
+      <button><a href="/coffee">SUBMIT</a></button>
+    </form>
+  </body>
+</html>
