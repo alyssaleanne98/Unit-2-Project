@@ -36,6 +36,13 @@ coffeeRouter.delete("/:id", (req, res) => {
   })
 
   //CREATE
+  coffeeRouter.post("/", (req, res) => {
+    console.log(req.body)
+    Coffee.create(req.body, (error, createdCoffee) => {
+        console.log(error, createdCoffee)
+        res.redirect("/coffee")
+    })
+  })
 
 //UPDATE
 coffeeRouter.put("/:id", (req, res) => {
@@ -61,7 +68,6 @@ coffeeRouter.get("/:id", (req, res) => {
         res.render("show.ejs", {coffees: foundCoffee})
     })
 })
-
 
 
 module.exports = coffeeRouter 

@@ -11,11 +11,13 @@
 <body>
     <h1>New Page</h1>
     <form action="/coffee" method="POST">
-        Name: <input type="text" name="name" /></br/>
-        Price: <input type="text" name="price" /></br/>
-        Flavor: <input type="text" name="flavor" /></br/>
-        Milk: <input type="text" name="milk" /></br/>
-        Espresso/Shot option: <input type="text" name="Expresso/Shot option" /></br/>
+        Name: <input type="text" name="name" required /></br/>
+        Price: <input type="text" name="price" required/></br/>
+        Flavors: <input type="text" name="flavors" required/></br/>
+        Milk: <input type="text" name="milk" required/></br/>
+        Toppings: <input type="text" name="toppings" required/></br/>
+        Espresso: <input type="text" name="espresso" required/></br/>
+        <input type="submit" name="" value="Add Coffee" /><br/>
         </form>
     </form>
 
