@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<style>
+    body {
+            background-color: rgb(235, 230, 208);
+            font-family: 'aboreto';
+            font-size: 28px;
+            color: rgb(37, 48, 97);
+            margin-top: 370px;
+
+        }
+</style>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Coffee </title>
+    <title>Modify </title>
   </head>
 
   <body>
     <h1>Edit Coffee</h1>
     <form action="/coffee/" method="POST">
       Name: <input type="text" name="Name" value="<%=coffees.name%>" /><br />
+      Image: <input type="text" name="Name" value="<%=coffees.img%>" /><br />
       Flavors: <input type="text" name="Name" value="<%=coffees.flavors%>" /><br />
       Expresso: <input type="text" name="Name" value="<%=coffees.espresso%>" /><br />
       Toppings: <input type="text" name="Name" value="<%=coffees.toppings%>" /><br />

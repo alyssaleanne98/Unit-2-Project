@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    body {
+            background-color: rgb(199, 131, 82);
+            font-family: 'aboreto';
+            font-size: 18px;
+            color: rgb(238, 233, 208);
+
+        }
+        img {
+            width: 385px;
+            height: 350px;
+            border: 10px solid;
+            border-bottom-width: 110px;
+            border-color: rgb(4, 5, 80);
+        }
+    
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +31,7 @@
         <nav>
             <form action="/coffee/<%= coffees._id %>?_method=DELETE" method="post">
                 <input type="submit" value="DELETE" />
-                <a href="/coffee/<%= coffees._id %>/edit">EDIT</a>
+                <button><a href="/coffee/<%= coffees._id %>/edit">EDIT</a></button>
             </form>
         </nav>
         <h1>
@@ -25,6 +43,7 @@
                 Flavors: <%= coffees.flavors %><br />
                 Toppings: <%= coffees.toppings %><br />
                 Espresso: <%= coffees.espresso %><br />
+                <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
                
                 
 

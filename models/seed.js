@@ -1,5 +1,14 @@
 const coffeeData = [
     {
+        name: "Honey Lavender Latte",
+        img: "https://theboozyginger.com/wp-content/uploads/2021/01/Honey-Lavender-Latte-7-scaled.jpg",
+        milk: "steamed milk",
+        flavors: "2 pump(s) lavender syrup + honey",
+        espresso: "2 shots",
+        toppings: "lavender flower",
+        price: "$4.50",
+    },
+    {
         name: "House Cold Brew",
         img: "https://fitfoodiefinds.com/wp-content/uploads/2021/05/Sweet-Cream-Cold-Brew-16-650x975.jpg",
         milk: "steamed milk",
@@ -8,15 +17,6 @@ const coffeeData = [
         toppings: "none",
         price: "$5",
         
-    },
-    {
-        name: "Honey Lavender Latte",
-        img: "https://theboozyginger.com/wp-content/uploads/2021/01/Honey-Lavender-Latte-7-scaled.jpg",
-        milk: "steamed milk",
-        flavors: "2 pump(s) lavender syrup + honey",
-        espresso: "2 shots",
-        toppings: "lavender flower",
-        price: "$4.50",
     },
     {
         name: "House Made Vanilla Latte",
@@ -43,6 +43,33 @@ const coffeeData = [
         flavors: "3 scoop(s) matcha powder",
         espresso: "none",
         toppings: "honey drizzle",
+        price: "$3.00",
+    },
+    {
+        name: "Iced Caramel Macchiato",
+        img: "https://images.immediate.co.uk/production/volatile/sites/30/2022/04/Iced-Caramel-Macchiato-f4a10f9.jpg?quality=90&webp=true&resize=300,272",
+        milk: "steamed milk",
+        flavors: "3 scoop(s) matcha powder",
+        espresso: "none",
+        toppings: "honey drizzle",
+        price: "$3.00",
+    },
+    {
+        name: "Dirty Chai Latte",
+        img: "https://boulderlocavore.com/wp-content/uploads/2020/10/Chai-Masala-and-latte-title-image-500x500.jpg",
+        milk: "steamed milk",
+        flavors: "2 pump(s) vanilla",
+        espresso: "2 shots",
+        toppings: "whip cream + cinnamon",
+        price: "$3.00",
+    },
+    {
+        name: "Homemade Hot Chocolate",
+        img: "https://www.allrecipes.com/thmb/1D9VifIlr7wx87iF55R0k2h3x5E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20211-creamy-hot-cocoa-vat-hero-1x1-1-2000-65d5201be8cf4990a2db71c3e2f9d19c.jpg",
+        milk: "steamed milk",
+        flavors: "2 pump(s) vanilla",
+        espresso: "2 shots",
+        toppings: "whip cream + cinnamon",
         price: "$3.00",
     },
 ];

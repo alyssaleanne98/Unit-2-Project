@@ -5,59 +5,154 @@
 <head>
     <style>
         body {
-            background-color: rgb(238, 230, 185);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 25px;
-            color: rgb(154, 122, 174)
-            
+            background-color: rgb(235, 230, 208);
+            font-family: 'aboreto';
+            font-size: 28px;
+            color: rgb(37, 48, 97);
+            margin-top: 370px;
+
+        }
+
+        hr {
+            width: 88%;
+            height: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 250px;
+            background-color: rgb(224, 224, 233);
+        }
+
+        /* request help for row  */
+        .flex-container {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
         }
 
         img {
-            width: 400px;
-            height: 500px;
+            width: 385px;
+            height: 350px;
+            border: 10px solid;
+            border-bottom-width: 110px;
+            border-color: rgb(234, 243, 240);
         }
-
 
         nav {
-            justify-content: center;
             width: 100%;
-            height: 50px;
-
-
+            height: 270px;
+            background-color: rgb(199, 131, 82);
+            opacity: 0.9;
         }
-
-        li {
+  
+        .A1 {
+            transform: translate(22px, 72px) rotate(-30deg);
+        }
+  
+        .e1 {
+            transform: translate(13px, 57px) rotate(-25deg);
+        }
+  
+        .e2 {
+            transform: translate(6px, 38px) rotate(-20deg);
+        }
+  
+        .k1 {
+            transform: translate(3px, 23px) rotate(-15deg);
+        }
+  
+        .s1 {
+            transform: translate(2px, 14px) rotate(-10deg);
+        }
+  
+        .f {
+            transform: translate(1px, 8px) rotate(-5deg);
+        }
+  
+        .o {
+            transform: translate(0px, 5px) rotate(0deg);
+        }
+  
+        .r {
+            transform: translate(-1px,11px) rotate(5deg);
+        }
+  
+        .G2 {
+            transform: translate(-2px, 17px) rotate(10deg);
+        }
+  
+        .e3 {
+            transform: translate(-3px, 28px) rotate(15deg);
+        }
+  
+        .e4 {
+            transform: translate(-6px, 47px) rotate(20deg);
+        }
+  
+        .k2 {
+            transform: translate(-14px, 68px) rotate(25deg);
+        }
+  
+        .s2 {
+            transform: translate(-20px, 80px) rotate(30deg);
+        }
+  
+        /* An inline-block element is placed as an inline
+         element (on the same line as adjacent content), 
+         but it behaves like a block element  */
+  
+        span {
             display: inline-block;
         }
 
-
-
-        /* // imager save files locally into image file called static images */
-        /* image folder same as css folder - same way you reference your css 
- img/  */
+        
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" />
-    <title>Coffee Menu </title>
+    <title>Coffe Menu</title>
 </head>
 <nav>
-    <h1>Serendipity Cafe</h1>
-    <a href="/coffee/new">Add New Coffee</a>
+    <div style="text-align: center; padding-top: 100px;
+                font-size: 55px; color: rgb(28, 5, 97);">
+  
+        <!-- Declare all the characters of text 
+            one-by-one, inside span tags -->
+        <span class="A1">A</span>
+        <span class="e1">•</span>
+        <span class="e2">B</span>
+        <span class="k1">a</span>
+        <span class="s1">r</span>
+        <span class="k2"></span>
+        <span class="f">M</span>
+        <span class="o">a</span>
+        <span class="r">n</span>
+        <span class="G2">a</span>
+        <span class="e3">g</span>
+        <span class="e4">e</span>
+        <span class="k2">r</span>
+    </div>
+    <!-- <h1>A • Bar Manager</h1> -->
+    <!-- <i class="bi bi-cup-hot"></i> -->
+    <button><a href="/coffee/new">Add New Coffee</a></button>
+    <hr style="border: none">
 </nav>
 
 <body>
-    <ul>
-        <li>
-            <% coffees.forEach(coffees=> { %>
-                <h3>
-                    <%= coffees.name%>
-                </h3>
-                <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
-        </li>
-        <% }) %>
-    </ul>
+    <div class="flex-container">
+        <ul>
+            <li>
+                <% coffees.forEach(coffees=> { %>
+                    <h3>
+                        <%= coffees.name%>
+                    </h3>
+                    <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
+
+            </li>
+            <% }) %>
+                
+        </ul>
+    </div>
 </body>
 
 </html>
