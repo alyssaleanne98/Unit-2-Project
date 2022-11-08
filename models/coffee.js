@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 
-// // this is our book schema
 const coffeeSchema = new mongoose.Schema({
     name: { type: String, required: true },
     price: { type: String, required: true }, 

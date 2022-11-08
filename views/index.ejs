@@ -3,18 +3,38 @@
 
 
 <head>
-    <style> 
-    body {
-        background-color: pink; 
-    }
-    .main {
-        width: 400px;
-        height: 500px;
-    }
-    
-        
-    
-        
+    <style>
+        body {
+            background-color: rgb(238, 230, 185);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            color: rgb(154, 122, 174)
+            
+        }
+
+        img {
+            width: 400px;
+            height: 500px;
+        }
+
+
+        nav {
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+
+
+        }
+
+        li {
+            display: inline-block;
+        }
+
+
+
+        /* // imager save files locally into image file called static images */
+        /* image folder same as css folder - same way you reference your css 
+ img/  */
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,22 +43,21 @@
     <title>Coffee Menu </title>
 </head>
 <nav>
+    <h1>Serendipity Cafe</h1>
     <a href="/coffee/new">Add New Coffee</a>
 </nav>
 
 <body>
-    <h1>Coffee Menu</h1>
     <ul>
-        <% coffees.forEach(coffees=> { %>
-            <h3>
-                
-            </h3>
-            <li>
-                <a href="/coffee/<%= coffees._id %>"><%= coffees.name%>
-                    <img class="main" src=<%= coffees.img %>></a>
-            </li>
-            <% }) %>
-
+        <li>
+            <% coffees.forEach(coffees=> { %>
+                <h3>
+                    <%= coffees.name%>
+                </h3>
+                <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
+        </li>
+        <% }) %>
+    </ul>
 </body>
 
 </html>
