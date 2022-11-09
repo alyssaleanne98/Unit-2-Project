@@ -9,7 +9,7 @@ const drinksController = require("./controllers/drinks")
 
 require('dotenv').config()
 // Pulls environment vars into server.js from .env
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3002;
 
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
