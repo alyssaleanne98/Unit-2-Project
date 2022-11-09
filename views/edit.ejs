@@ -4,32 +4,137 @@
 
 <style>
     body {
-            background-color: rgb(235, 230, 208);
-            font-family: 'aboreto';
-            font-size: 28px;
-            color: rgb(37, 48, 97);
-            margin-top: 370px;
+        background-color: rgb(235, 230, 208);
+        font-family: 'aboreto';
+        font-size: 18px;
+        color: rgb(37, 48, 97);
 
-        }
+    }
+
+    img {
+        width: 385px;
+        height: 350px;
+        border: 10px solid;
+        border-bottom-width: 110px;
+        border-color: rgb(234, 243, 240);
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 270px;
+        background-color: rgb(202, 207, 217);
+        opacity: 0.7;
+    }
+
+    .A1 {
+        transform: translate(22px, 72px) rotate(-30deg);
+    }
+
+    .e1 {
+        transform: translate(13px, 57px) rotate(-25deg);
+    }
+
+    .e2 {
+        transform: translate(6px, 38px) rotate(-20deg);
+    }
+
+    .k1 {
+        transform: translate(3px, 23px) rotate(-15deg);
+    }
+
+    .s1 {
+        transform: translate(2px, 14px) rotate(-10deg);
+    }
+
+    .f {
+        transform: translate(1px, 8px) rotate(-5deg);
+    }
+
+    .o {
+        transform: translate(0px, 5px) rotate(0deg);
+    }
+
+    .r {
+        transform: translate(-1px, 11px) rotate(5deg);
+    }
+
+    .G2 {
+        transform: translate(-2px, 17px) rotate(10deg);
+    }
+
+    .e3 {
+        transform: translate(-3px, 28px) rotate(15deg);
+    }
+
+    .e4 {
+        transform: translate(-6px, 47px) rotate(20deg);
+    }
+
+    .k2 {
+        transform: translate(-14px, 68px) rotate(25deg);
+    }
+
+    .s2 {
+        transform: translate(-20px, 80px) rotate(30deg);
+    }
+
+    /* An inline-block element is placed as an inline
+         element (on the same line as adjacent content), 
+         but it behaves like a block element  */
+
+    span {
+        display: inline-block;
+    }
 </style>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modify </title>
-  </head>
+</head>
+<nav>
+    <div style="text-align: center; padding-top: 50px;
+                font-size: 55px; color: rgb(28, 5, 97);">
 
-  <body>
-    <h1>Edit Coffee</h1>
+        <!-- Declare all the characters of text 
+            one-by-one, inside span tags -->
+        <span class="A1">A</span>
+        <span class="e1">•</span>
+        <span class="e2">B</span>
+        <span class="k1">a</span>
+        <span class="s1">r</span>
+        <span class="k2"></span>
+        <span class="f">M</span>
+        <span class="o">a</span>
+        <span class="r">n</span>
+        <span class="G2">a</span>
+        <span class="e3">g</span>
+        <span class="e4">e</span>
+        <span class="k2">r</span>
+    </div>
+</nav>
+
+<body>
     <form action="/coffee/" method="POST">
-      Name: <input type="text" name="Name" value="<%=coffees.name%>" /><br />
-      Image: <input type="text" name="Name" value="<%=coffees.img%>" /><br />
-      Flavors: <input type="text" name="Name" value="<%=coffees.flavors%>" /><br />
-      Expresso: <input type="text" name="Name" value="<%=coffees.espresso%>" /><br />
-      Toppings: <input type="text" name="Name" value="<%=coffees.toppings%>" /><br />
-      Price: <input type="text" name="Name" value="<%=coffees.price%>" /><br />
-      
-      <button><a href="/coffee">SUBMIT</a></button>
+        <h1>Edit Coffee</h1>
+        Name: <input type="text" name="Name" value="<%=coffees.name%>" /><br />
+        Flavors: <input type="text" name="Name" value="<%=coffees.flavors%>" /><br />
+        Expresso: <input type="text" name="Name" value="<%=coffees.espresso%>" /><br />
+        Toppings: <input type="text" name="Name" value="<%=coffees.toppings%>" /><br />
+        Price: <input type="text" name="Name" value="<%=coffees.price%>" /><br />
+        <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
+
+        <button><a href="/coffee">SUBMIT</a></button>
     </form>
-  </body>
+</body>
+
 </html>
