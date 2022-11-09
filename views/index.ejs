@@ -10,9 +10,7 @@
             font-size: 28px;
             color: rgb(37, 48, 97);
             margin-top: 370px;
-
         }
-
         hr {
             width: 88%;
             height: 2px;
@@ -25,8 +23,13 @@
         /* request help for row  */
         .flex-container {
             justify-content: center;
+            display: inline-flex;
+            /* flex-direction: column; */
+        }
+        .index{
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+
         }
 
         img {
@@ -140,8 +143,8 @@
 
 <body>
     <div class="flex-container">
-        <ul>
-            <li>
+        <ul class="index">
+            <liclass="flex-container"></liclass>>
                 <% coffees.forEach(coffees=> { %>
                     <h3>
                         <%= coffees.name%>
