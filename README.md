@@ -28,6 +28,8 @@ Share the experience:
 1. Personally, when learning how to build a full crud app, it was easy to lose track of the purpose behind every task that I was completing. A key takeaway for me was to find how I learn best, and that included pseudocoding along the way as I was creating my routes. I found that to be extremely helpful.
 
 
+## Future Enhancements 
+1. One future enhancement could include an authentication for the specific user who manages the coffee shop and is not meant for any user to have access to.
 ## Issues and Resolutions 
 1. One thing that I struggled with was staying organized throughout the course of building my application, and keeping it as clean as possible. Although building a full crud application is more complex compared to our unit-1 project, I found our unit-2 project went a lot smoother. I ran into some roadblocks when it came to styling, specifically with flexbox. Taking advantage of the resources and help that I received from the instructors and students really helped overcome those roadblocks.
 
