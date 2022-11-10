@@ -49,9 +49,9 @@ const coffeeData = [
         name: "Iced Caramel Macchiato",
         img: "https://images.immediate.co.uk/production/volatile/sites/30/2022/04/Iced-Caramel-Macchiato-f4a10f9.jpg?quality=90&webp=true&resize=300,272",
         milk: "steamed milk",
-        flavors: "3 scoop(s) matcha powder",
-        espresso: "none",
-        toppings: "honey drizzle",
+        flavors: "2 pump(s) vanilla syrup",
+        espresso: "2 shots",
+        toppings: "caramel drizzle",
         price: "$3.00",
     },
     {

@@ -35,16 +35,7 @@ coffeeRouter.delete("/:id", (req, res) => {
     })
   })
 
-  //CREATE
-  coffeeRouter.post("/", (req, res) => {
-    console.log(req.body)
-    Coffee.create(req.body, (error, createdCoffee) => {
-        console.log(error, createdCoffee)
-        res.redirect("/coffee")
-    })
-  })
-
-//UPDATE
+  //UPDATE
 coffeeRouter.put("/:id", (req, res) => {
     Coffee.findByIdAndUpdate(
       req.params.id,
@@ -52,6 +43,15 @@ coffeeRouter.put("/:id", (req, res) => {
       (err, updatedCoffee) => {
       // redirect user to showpage
       res.redirect(`/coffee/${req.params.id}`);
+    })
+  })
+
+  //CREATE
+  coffeeRouter.post("/", (req, res) => {
+    console.log(req.body)
+    Coffee.create(req.body, (error, createdCoffee) => {
+        console.log(error, createdCoffee)
+        res.redirect("/coffee")
     })
   })
 
