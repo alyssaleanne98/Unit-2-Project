@@ -116,12 +116,12 @@
 <body>
     <form action="/coffee/" method="POST">
         <h1>Edit Coffee</h1>
-        Name: <input type="text" name="Name" value="<%=coffees.name%>" /><br />
-        Milk: <input type="text" name="Name" value="<%=coffees.milk%>" /><br />
-        Flavors: <input type="text" name="Name" value="<%=coffees.flavors%>" /><br />
-        Expresso: <input type="text" name="Name" value="<%=coffees.espresso%>" /><br />
-        Toppings: <input type="text" name="Name" value="<%=coffees.toppings%>" /><br />
-        Price: <input type="text" name="Name" value="<%=coffees.price%>" /><br />
+        Name: <input type="text" name="name" value="<%=coffees.name%>" /><br />
+        Milk: <input type="text" name="milk" value="<%=coffees.milk%>" /><br />
+        Flavors: <input type="text" name="flavors" value="<%=coffees.flavors%>" /><br />
+        Expresso: <input type="text" name="espresso" value="<%=coffees.espresso%>" /><br />
+        Toppings: <input type="text" name="toppings" value="<%=coffees.toppings%>" /><br />
+        Price: <input type="text" name="price" value="<%=coffees.price%>" /><br />
         <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
 
         <button><a href="/coffee">SUBMIT</a></button>
