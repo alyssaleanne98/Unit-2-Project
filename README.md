@@ -28,3 +28,6 @@ node.js
 mongodb 
 
 ## Screenshots 
+![Screen Shot 2022-11-09 at 6 47 17 PM](https://user-images.githubusercontent.com/112597248/201266951-4d098084-9ea4-488c-ae51-767b18f917a0.png)
+![Screen Shot 2022-11-09 at 6 47 34 PM](https://user-images.githubusercontent.com/112597248/201266962-932b85fe-89a1-4282-90bd-75a81d5b3d16.png)
+![Screen Shot 2022-11-09 at 6 48 00 PM](https://user-images.githubusercontent.com/112597248/201266974-66c2529c-616a-4271-9781-1bc9c54bfdf6.png)
