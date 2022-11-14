@@ -41,7 +41,6 @@ coffeeRouter.put("/:id", (req, res) => {
       req.params.id,
       req.body,
       (err, updatedCoffee) => {
-      // redirect user to showpage
       res.redirect(`/coffee/${req.params.id}`);
     })
   })

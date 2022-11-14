@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
 
 
 <head>
     <style>
         body {
             background-color: rgb(235, 230, 208);
-            font-family: 'aboreto';
-            font-size: 22px;
             color: rgb(37, 48, 97);
         }
-
-        hr {
-            width: 88%;
-            height: 2px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-            background-color: rgb(224, 224, 233);
-        }
-
         .flex-container {
             flex-wrap: wrap;
             display: flex;
@@ -48,7 +41,8 @@
             background-color: rgb(199, 131, 82);
             opacity: 0.9;
         }
-        button{
+
+        button {
             background-color: rgb(222, 215, 189);
         }
 
@@ -108,17 +102,12 @@
             display: inline-block;
         }
     </style>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" />
 </head>
+
 <nav>
     <div style="text-align: center; padding-top: 50px;
                 font-size: 55px; color: rgb(28, 5, 97);">
 
-        <!-- Declare all the characters of text 
-            one-by-one, inside span tags -->
         <span class="A1">A</span>
         <span class="e1">•</span>
         <span class="e2">B</span>
@@ -140,11 +129,11 @@
     <div class="flex-container">
         <% coffees.forEach(coffees=> { %>
             <div class="menu-item">
-            <h3>
-                <%= coffees.name%>
-            </h3>
-            <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
-        </div>
+                <h3>
+                    <%= coffees.name%>
+                </h3>
+                <a href="/coffee/<%= coffees._id %>"><img src=<%=coffees.img %>></a>
+            </div>
             <% }) %>
     </div>
     <button><a href="/coffee/new">Add New Coffee</a></button>

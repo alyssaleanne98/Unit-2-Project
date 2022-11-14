@@ -95,8 +95,6 @@
     <div style="text-align: center; padding-top: 50px;
                 font-size: 55px; color: rgb(28, 5, 97);">
 
-        <!-- Declare all the characters of text 
-            one-by-one, inside span tags -->
         <span class="A1">A</span>
         <span class="e1">•</span>
         <span class="e2">B</span>
@@ -111,10 +109,11 @@
         <span class="e4">e</span>
         <span class="k2">r</span>
     </div>
+    <hr style="border: none">
 </nav>
 
 <body>
-    <form action="/coffee/" method="POST">
+    <form action="/coffee/<%=coffees._id%>?_method=PUT" method="POST">
         <h1>Edit Coffee</h1>
         Name: <input type="text" name="name" value="<%=coffees.name%>" /><br />
         Milk: <input type="text" name="milk" value="<%=coffees.milk%>" /><br />

@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    body {
-        background-color: rgb(235, 230, 208);
-        font-family: 'aboreto';
-        font-size: 18px;
-        color: rgb(37, 48, 97);
-        /* margin-top: 10px; */
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
 
-    }
+    <style>
+        body {
+            background-color: rgb(235, 230, 208);
+            /* font-family: 'aboreto';
+        font-size: 18px; */
+            color: rgb(37, 48, 97);
+            /* margin-top: 10px; */
 
-    img {
-        width: 385px;
-        height: 350px;
-        border: 10px solid;
-        border-bottom-width: 110px;
-        border-color: rgb(2, 3, 91);
+        }
 
-    }
-    form {
-        justify-content: center;
-        display: flex;
-    }
+        img {
+            width: 385px;
+            height: 350px;
+            border: 10px solid;
+            border-bottom-width: 110px;
+            border-color: rgb(2, 3, 91);
 
-    .flex-container {
-        justify-content: center;
-        display: flex;
-        font-size: 30px;
-        margin: 50px
-        /* flex-direction: column; */
-    }
-    .ingredients {
-        justify-content: center;
-        display: flex;
-    }
-    nav {
+        }
+
+        form {
+            justify-content: center;
+            display: flex;
+        }
+
+        .flex-container {
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            margin: 50px
+                /* flex-direction: column; */
+        }
+
+        .ingredients {
+            justify-content: center;
+            display: flex;
+        }
+
+        nav {
             width: 100%;
             height: 270px;
             background-color: rgb(238, 219, 206);
             opacity: 0.9;
         }
-    .A1 {
+
+        .A1 {
             transform: translate(22px, 72px) rotate(-30deg);
         }
 
@@ -91,24 +101,15 @@
 
         .s2 {
             transform: translate(-20px, 80px) rotate(30deg);
-        }
+        } 
         span {
             display: inline-block;
-        }
-</style>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show page </title>
-</head>
-<nav>
-    <div style="text-align: center; padding-top: 10px;
+        } 
+    </style>
+    <nav>
+        <div style="text-align: center; padding-top: 10px;
                 font-size: 55px; color: rgb(28, 5, 97);">
 
-        <!-- Declare all the characters of text 
-            one-by-one, inside span tags -->
             <span class="A1">A</span>
             <span class="e1">•</span>
             <span class="e2">B</span>
@@ -122,8 +123,10 @@
             <span class="e3">g</span>
             <span class="e4">e</span>
             <span class="k2">r</span>
-    </div>
-</nav>
+        </div>
+        <hr style="border: none">
+    </nav>
+
 <body>
     <div class="flex-container">
         <%= coffees.name %>
